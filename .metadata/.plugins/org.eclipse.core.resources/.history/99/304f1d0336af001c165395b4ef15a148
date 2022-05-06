@@ -1,0 +1,56 @@
+package miniProject;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
+
+public class MiniProject1 {
+
+	public static void main(String[] args) {
+		
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\gowtham\\eclipse-workspace\\JavaSelenium\\Drivers\\chromedriver.exe");
+		
+		WebDriver driver=new ChromeDriver();
+		
+		driver.get("http://automationpractice.com/");
+		driver.manage().window().maximize();
+
+		WebElement womenClick = driver.findElement(By.xpath("//*[@id=\'block_top_menu\']/ul/li[1]/a"));
+		womenClick.click();
+	
+		
+		WebElement dresses = driver.findElement(By.xpath("/html/body/div/div[2]/div/div[3]/div[2]/div[2]/ul/li[2]/div[1]/a/img"));
+		dresses.click();
+		
+		WebElement select1=driver.findElement(By.xpath("//*[@id=\'center_column\']/ul/li[3]/div/div[2]/h5/a"));
+		select1.click();
+		
+		driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
+				
+		WebElement addCart=driver.findElement(By.xpath("/html/body/div/div[2]/div/div[3]/div/div/div/div[4]/form/div/div[3]/div/p/button/span"));
+		addCart.click();
+		
+		WebElement CheckOut=driver.findElement(By.xpath("//*[@id='layer_cart']/div[1]/div[2]/div[4]/a/span"));
+		CheckOut.click();
+		
+		Actions a=new Actions(driver);
+		
+		WebElement plusButton=driver.findElement(By.xpath("//*[@id=\"cart_quantity_up_5_19_0_0\"]/span/i"));
+		
+		a.click(plusButton);
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+
+}

@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="Adactin_RunnerClass" project="Cucumber" tests="1" started="1" failures="0" errors="0" ignored="0">
+  <testcase name="com.adactin.runner.Adactin_RunnerClass" classname="com.adactin.runner.Adactin_RunnerClass" time="0.0" displayname="Adactin_RunnerClass" uniqueid="[engine:junit-vintage]/[runner:com.adactin.runner.Adactin_RunnerClass]"/>
+</testrun>

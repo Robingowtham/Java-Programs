@@ -1,0 +1,53 @@
+package testNg;
+
+import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.Test;
+
+public class TestNGPractice {
+
+	@Test
+	private void A() {
+		System.out.println("D");
+
+	}
+	
+	@Test
+	private void B() {
+		System.out.println("C");
+
+	}
+	
+	@Test
+	private void C() {
+		System.out.println("B");
+
+	}
+	
+	@Test(priority=0)
+	private void D() {
+		System.out.println("A");
+	}
+	
+//	@Test(priority=4)
+//	private void ThirdGear() {
+//		System.out.println("Third Gear");
+//
+//	}
+//	
+//	@Test(priority=6)
+//	private void FourthGear() {
+//		System.out.println("Fourth Gear");
+//
+//	}
+//
+//	@Test(priority=5)
+//	private void MusicSystem() {
+//		System.out.println("Music on System");
+//
+//	}
+
+
+
+}
+
+

@@ -1,0 +1,24 @@
+package learn.Programming;
+
+public class NumberReverse {
+
+	public static void main(String[] args) {
+
+		int no=1234;
+		int rem=0;
+//		
+//		while (no>0) {
+//			
+//		rem=(rem*10)+no%10;
+//		no=no/10;
+//		
+//		}
+//		System.out.println("Reversing number "+ rem);
+	
+		for (int i=1234; i>0; i++) {
+			rem=(rem*10)+i%10;
+			i=i/10;
+			System.out.println("Reversing number "+rem);
+		}
+	}	
+}

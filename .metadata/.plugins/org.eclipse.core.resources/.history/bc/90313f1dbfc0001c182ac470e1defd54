@@ -1,0 +1,52 @@
+package testNg;
+
+import org.testng.annotations.Test;
+
+public class TestNGPractice {
+
+	@Test(enabled=true)
+	private void PutKey() {
+		System.out.println("Put Key");
+
+	}
+	
+	@Test(priority=1)
+	private void StartCar() {
+		System.out.println("Start Car");
+
+	}
+	
+	@Test(priority=2)
+	private void FirstGear() {
+		System.out.println("First Gear");
+
+	}
+	
+//	@Test(priority=3)
+//	private void SecondGear() {
+//		System.out.println("Second Gear");
+//	}
+//	
+//	@Test(priority=4)
+//	private void ThirdGear() {
+//		System.out.println("Third Gear");
+//
+//	}
+//	
+//	@Test(priority=6)
+//	private void FourthGear() {
+//		System.out.println("Fourth Gear");
+//
+//	}
+//
+//	@Test(priority=5)
+//	private void MusicSystem() {
+//		System.out.println("Music on System");
+//
+//	}
+
+
+
+}
+
+

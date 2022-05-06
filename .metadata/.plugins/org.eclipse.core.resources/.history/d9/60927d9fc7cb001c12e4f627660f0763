@@ -1,0 +1,43 @@
+package com.adactin.runner;
+
+import java.io.IOException;
+
+import org.junit.AfterClass;
+import org.junit.BeforeClass;
+import org.junit.runner.RunWith;
+import org.openqa.selenium.WebDriver;
+
+import com.Cucumber.Base_Class;
+
+import adactin.properties.FileReader;
+import io.cucumber.junit.Cucumber;
+import io.cucumber.junit.CucumberOptions;
+
+@RunWith(Cucumber.class)
+@CucumberOptions(features = "src\\test\\java\\com\\adactin\\feature\\Adactin.feature", 
+glue = "com.adactin.stepdefinition",
+
+dryRun = true,
+monochrome = true,
+tags=("@smoke, @sanity, @UnitTest1, @UnitTest2, @RegressionTest"))
+
+
+public class Adactin_RunnerClass {
+
+	public static WebDriver driver;
+
+	@BeforeClass 
+	public static void driverLaunch() throws IOException {
+		// launch browser
+		String browser = FileReader.readBrowser().confirmThis().getBrowser();
+
+		driver = Base_Class.findBrowser(browser);
+	}
+
+	@AfterClass 
+	public static void close() {
+		// close browser
+		driver = Base_Class.closeMe();
+	}
+
+}

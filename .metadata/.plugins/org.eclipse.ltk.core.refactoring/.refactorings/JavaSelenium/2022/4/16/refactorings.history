@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;miniProject.MiniProject2&apos; to &apos;Adactin&apos;&#x0D;&#x0A;- Original project: &apos;JavaSelenium&apos;&#x0D;&#x0A;- Original element: &apos;miniProject.MiniProject2&apos;&#x0D;&#x0A;- Renamed element: &apos;miniProject.Adactin&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;MiniProject2&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;miniProject{MiniProject2.java[MiniProject2" matchStrategy="1" name="Adactin" qualified="false" references="true" similarDeclarations="false" stamp="1650102791262" textual="false" version="1.0"/>
+</session>

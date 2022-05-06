@@ -1,0 +1,38 @@
+package miniProject;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class MiniProject1 {
+
+	public static void main(String[] args) {
+		
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\gowtham\\eclipse-workspace\\JavaSelenium\\Drivers\\chromedriver.exe");
+		
+				WebDriver driver=new ChromeDriver();
+		
+		driver.get("http://automationpractice.com/");
+		driver.manage().window().maximize();
+
+		WebElement womenClick = driver.findElement(By.xpath("//*[@id=\"block_top_menu\"]/ul/li[1]/a"));
+		womenClick.click();
+	
+		JavascriptExecutor js= (JavascriptExecutor) driver;
+		
+		
+		WebElement dresses = driver.findElement(By.xpath("//*[@id=\'subcategories\']/ul/li[2]/div[1]/a"));
+		js.executeScript("arguments[0].scrollIntoView()", dresses);
+		js.executeScript("arguments[0].click()", dresses);
+		
+		WebElement addCart=driver.findElement(By.xpath("//*[@id=\"center_column\"]/ul/li[3]/div/div[1]/div/a[1]/img"));
+		addCart.click();
+		
+		
+		
+		
+	}
+
+}

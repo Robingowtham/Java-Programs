@@ -1,0 +1,5 @@
+package adactin.properties;
+
+public class ConfigurationReader {
+
+}

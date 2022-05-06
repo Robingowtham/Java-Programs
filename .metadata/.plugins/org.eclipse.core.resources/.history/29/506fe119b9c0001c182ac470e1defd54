@@ -1,0 +1,32 @@
+package testNg;
+
+import org.testng.annotations.Test;
+import org.testng.annotations.Test;
+
+public class PracticeTestNG {
+	
+	@Test
+	private void OpenDoor() {
+		System.out.println("Open the House Door");
+
+	}
+	
+	@Test
+	private void Light() {
+		System.out.println("Light On in the room");
+
+	}
+
+	@Test
+	private void Music() {
+		System.out.println("Switch on the music");
+	}
+	
+	@Test
+	private void Food() {
+		System.out.println("Prepare food");
+
+	}
+}
+
+
