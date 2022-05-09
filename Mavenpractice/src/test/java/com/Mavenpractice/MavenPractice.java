@@ -56,10 +56,10 @@ public class MavenPractice {
 		proceed.click();
 		
 		WebElement login = driver.findElement(By.name("email"));
-		login.sendKeys("12341161xv1yy@gmail.com");
+		login.sendKeys("Dpak5@yahoo.com");
 		
 		WebElement pswd1 = driver.findElement(By.name("passwd"));
-		pswd1.sendKeys("password");
+		pswd1.sendKeys("1234567890");
 		
 		WebElement button = driver.findElement(By.xpath("//*[@id=\"SubmitLogin\"]/span"));
 		button.click();
