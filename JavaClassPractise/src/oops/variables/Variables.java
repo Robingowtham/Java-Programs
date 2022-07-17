@@ -15,7 +15,8 @@ public class Variables {
 		
 		num1();
 		System.out.println("Static method of class variables " + c);
-		
+	
+		System.out.println("Static method of class variables " + c);
 	}	
 	}
 
